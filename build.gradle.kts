@@ -15,9 +15,8 @@ repositories {
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
     version.set("2024.1.7")
-    type.set("IC") // Target IDE Platform
-
-    plugins.set(listOf(/* Plugin Dependencies */))
+    type.set("RD") // Target Rider instead of IntelliJ IDEA
+    plugins.set(listOf("rider")) // Ensure Rider support
 }
 
 tasks {
