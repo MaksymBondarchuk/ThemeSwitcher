@@ -11,4 +11,7 @@
             <add-to-group group-id="FileMenu" anchor="last"/>
         </action>
     </actions>
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory id="ThemeSwitcher-status-bar" implementation="bss.themeswitcher.ThemeSwitcherStatusBarWidgetFactory"/>
+    </extensions>
 </idea-plugin>
