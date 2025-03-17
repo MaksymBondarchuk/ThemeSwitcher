@@ -11,16 +11,11 @@ repositories {
     mavenCentral()
 }
 
-//intellij {
-//    version.set("2024.1.7")
-//    type.set("RD") // Target Rider instead of IntelliJ IDEA
-//    plugins.set(listOf("rider")) // Ensure Rider support
-//}
-
 intellij {
     version.set("2024.1.7")
-    type.set("IC") // Target IDE Platform
+    type.set("RD") // Target IDE Platform
 
+//    plugins.set(listOf("com.jetbrains.rider", "com.intellij.modules.platform"))
     plugins.set(listOf(/* Plugin Dependencies */))
 }
 
