@@ -5,22 +5,26 @@ plugins {
 }
 
 group = "bss"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
 }
 
-// Configure Gradle IntelliJ Plugin
-// Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
+//intellij {
+//    version.set("2024.1.7")
+//    type.set("RD") // Target Rider instead of IntelliJ IDEA
+//    plugins.set(listOf("rider")) // Ensure Rider support
+//}
+
 intellij {
     version.set("2024.1.7")
-    type.set("RD") // Target Rider instead of IntelliJ IDEA
-    plugins.set(listOf("rider")) // Ensure Rider support
+    type.set("IC") // Target IDE Platform
+
+    plugins.set(listOf(/* Plugin Dependencies */))
 }
 
 tasks {
-    // Set the JVM compatibility versions
     withType<JavaCompile> {
         sourceCompatibility = "17"
         targetCompatibility = "17"

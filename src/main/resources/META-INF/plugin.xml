@@ -6,9 +6,9 @@
     <depends>com.intellij.modules.platform</depends>
 
     <actions>
-        <action id="ThemeSwitcher" class="bss.themeswitcher.ThemeSwitcherAction"
+        <action id="ThemeSwitcher-file" class="bss.themeswitcher.ThemeSwitcherAction"
                 text="Switch Theme" description="Toggle between light and dark themes">
-            <add-to-group group-id="MainMenu" anchor="last"/>
+            <add-to-group group-id="FileMenu" anchor="last"/>
         </action>
     </actions>
 </idea-plugin>
